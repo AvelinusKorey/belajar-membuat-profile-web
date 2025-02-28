@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avelinus Korey - Personal Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        } 
+        /* Header style*/
+        header {
+         background-color: green;
+            color: #fff;
+            text-align: center; 
+            padding: 4rem 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        /*profile image style*/
+        .profile-img {
+            width: 150px;
+            height: 150;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+            border: 4px solid white;
+            object-fit: cover;
+        }
+        /*about section*/
+        about {
+            padding: 4rem 2rem;
+        }
+        .about h2 {
+            color: dimgray;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        /*project section*/
+        .projects {
+            padding: 4rem 2rem;
+            background-color: #f4f4f4;
+        }
+        .projects h2 {
+            color: dimgray;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+        .project-card {
+        background: white;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);        
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .contact {
+            padding: 4rem 2rem;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        .contact h2 {
+            margin-bottom: 2rem;
+        }
+        .contact-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+           background-color: orangered;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-btn:hover {
+            background-color: saddlebrown;
+        }
+        .social-icons {
+            margin: 2rem 0;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color:white;
+        }
+        /* Link Style*/
+        a {
+             color: darkorange;
+            text-decoration: none;
+        }
+        /* Footer Style*/
+        footer{
+            background-color: seagreen;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://avatars.githubusercontent.com/u/201219215?v=4" alt="" class="profile-img">
+        <h1>Avelinus Korey</h1>
+        <p>Pengembangan dan Desainer Web.</p>
+    </header>
+    <!-- header and -->
+     <section class="about">
+        <h2>Tentang saya</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptates necessitatibus, similique nihil eum fuga eius quo tempore ipsum maiores. Odio, error quia non iure neque pariatur accusamus molestias qui.</p>
+     </section>
+     <!-- section end -->
+
+     <section class="projects">
+        <h2>Proyek Saya</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc" alt="">
+                <h3>Proyek 1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo deleniti sint, necessitatibus praesentium totam laborum omnis eius laudantium veritatis, doloremque, consequatur eum illum tempore expedita voluptatibus. Possimus magnam iste sit?</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda" alt="">
+                <h3>Proyek 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo deleniti sint, necessitatibus praesentium totam laborum omnis eius laudantium veritatis, doloremque, consequatur eum illum tempore expedita voluptatibus. Possimus magnam iste sit?</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb" alt="">
+                <h3>Proyek 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo deleniti sint, necessitatibus praesentium totam laborum omnis eius laudantium veritatis, doloremque, consequatur eum illum tempore expedita voluptatibus. Possimus magnam iste sit?</p>
+            </div>
+        </div>
+     </section>
+     <!-- section end -->
+
+     <section class="contact">
+        <h2>Hubungi Saya</h2>
+        <div class="social-icons">
+            <a href="github"><i class="fa-brands fa-github"></i></a>
+            <a href="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="facebook"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <a href="mailto:yulikapalfin@gmail.com" class="contact-btn">kontak Saya</a>
+     </section>
+     <!-- section end -->
+     <footer>
+        <p>
+            2025 Avelinus Korey. Dibuat dan dikembangkan oleh <a href="Avelinus Korey" target="_blank">Avelinus Korey</a>
+        </p>
+     </footer>
+     <!-- footer and -->
+</body>
+</html>
